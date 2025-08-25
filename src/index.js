@@ -1,6 +1,7 @@
 import contractABI from "./abi.json";
 
-const contractAddress = "0xdee2b587d738dd06934f127f996693a86e039673";
+// Input your deployed smart contract address here.
+const contractAddress = import.meta.env.VITE_CONTRACT_ADDRESS;
 
 let web3 = new Web3(window.ethereum);
 let contract = new web3.eth.Contract(contractABI, contractAddress);
